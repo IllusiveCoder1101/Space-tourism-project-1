@@ -2,9 +2,10 @@ import React from 'react';
 import {useState,useContext} from 'react';
 
 const AppContext=React.createContext();
+
 const AppProvider=({children})=>{
    
-    const [shift,setShift]=useState('home');
+    const [shift,setShift]=useState(null);
     const [move,setMove]=useState(false);
     const click=()=>{
         setShift('destination');
@@ -38,12 +39,10 @@ const AppProvider=({children})=>{
     const shifting=(value)=>{
         setShift(value);
     }
-    const stopmoving=()=>{
-        setMove(false)
-    }
+    
     return(
         <AppContext.Provider
-        value={{shift,click,move,shifting,stopmoving}}>{children}
+        value={{shift,click,move,shifting}}>{children}
         </AppContext.Provider>
     )
 }

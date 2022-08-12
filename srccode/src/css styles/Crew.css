@@ -85,7 +85,7 @@
         margin-top:3rem;
     }
 }
-@media screen and (min-width:1080px) and (max-width:1440px) {
+@media screen and (min-width:1080px)  {
     .crew{
         display:flex;
         flex-direction:row-reverse;

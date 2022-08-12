@@ -1,19 +1,21 @@
 import backgroundwidth from "./backgroundwidth"
 
-const Url=(ctr,width,shift="")=>{
+const Url=(ctr,width,shift=null)=>{
 
-        if (shift==="home" || ctr===0){
-            backgroundwidth("Home",width)
-        }
-        if (shift==="destination" || ctr===1){
-            backgroundwidth('Destination',width)
-        }
-        if (shift==="crew" || ctr===2){
-            backgroundwidth('Crew',width)
-        }
-        if (shift==="technology" || ctr===3){
-            backgroundwidth('Technology',width)
-        }
    
+        if (shift==="home" || ctr===0){
+            return backgroundwidth("Home",width)
+        }
+        else if (shift==="destination" || ctr===1){
+            return backgroundwidth('Destination',width)
+        }
+        else if (shift==="crew" || ctr===2){
+            return backgroundwidth('Crew',width)
+        }
+        else if (shift==="technology" ||  ctr===3){
+            return backgroundwidth('Technology',width)
+        }
+    
+
 }
 export default Url

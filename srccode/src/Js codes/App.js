@@ -27,7 +27,7 @@ import {useGlobalContext} from './flow';
 
   useEffect(()=>{
     document.documentElement.className=Url(ctr,width,shift);
-    localStorage.setItem('background',Url(ctr,width));
+    localStorage.setItem('background',Url(ctr,width,shift));
   })
 
   return(

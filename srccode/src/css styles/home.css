@@ -98,9 +98,10 @@
 
 }
 
-@media screen and (min-width:1080px) and (max-width:1400px) {
+@media screen and (min-width:1080px) {
 
     .content2 {
+        margin-bottom:4rem;
         flex-direction: row;
     }
     .text{
@@ -125,9 +126,9 @@
     }
 
     .main{
-        width:15rem;
+        width:17rem;
         height:15rem;
-        margin-top:10rem;
+        margin-top:14rem;
         margin-right:5rem;
         font-size:1.5rem;
         padding:3rem;
