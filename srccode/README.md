@@ -71,8 +71,8 @@ I will try to keep my code much moe cleaner starting from the next projects.
 
 ## Author
 
-- Website - [Sankalpa Sarkar](https://space-tourism-project1.netlify.app/)
-- Frontend Mentor - [@Sankalp](https://www.frontendmentor.io/profile/Sankalp)
+- Website - [Sankalpa Sarkar](https://space-tourism-project1.netlify.app)
+- Frontend Mentor - [@IllusiveCoder1101](https://www.frontendmentor.io/profile/IllusiveCoder1101)
 
 
 
