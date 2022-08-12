@@ -7,6 +7,7 @@ const AppProvider=({children})=>{
    
     const [shift,setShift]=useState(null);
     const [move,setMove]=useState(false);
+
     const click=()=>{
         setShift('destination');
         setMove(true);
@@ -14,16 +15,18 @@ const AppProvider=({children})=>{
             click2()
         },20000)
     }
+
     const click2=()=>{
         
      
-            setShift('crew')
+        setShift('crew')
         setTimeout(()=>{
             click3()
         },20000)
   
         
     }
+
     const click3=()=>{
      
         setShift('technology')
@@ -32,6 +35,7 @@ const AppProvider=({children})=>{
         },15000)
    
     }
+    
     const click4=()=>{
         setShift('home');
         setMove(false);

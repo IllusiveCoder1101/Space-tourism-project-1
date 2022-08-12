@@ -27,7 +27,7 @@ import {useGlobalContext} from './flow';
 
   useEffect(()=>{
     document.documentElement.className=Url(ctr,width,shift);
-    localStorage.setItem('background',Url(ctr,width,shift));
+    localStorage.setItem('background',Url(ctr,width));
   })
 
   return(
@@ -143,19 +143,35 @@ import {useGlobalContext} from './flow';
 
 
 const page=(ctr,nxt="")=>{
-    
-  if (ctr===0 && nxt==="home"){
-    return <Home/>
+  if(nxt){
+    if (nxt==="home"){
+      return <Home/>
+    }
+    else if (nxt==="destination" ){
+      return <Destination/>
+    }
+    else if ( nxt==="crew"){
+      return <Crew/>
+    }
+    else if (nxt==="technology"){
+      return <Technology/>
+    }
+  }  
+  else{
+    if (ctr===0 ){
+      return <Home/>
+    }
+    else if (ctr===1 ){
+      return <Destination/>
+    }
+    else if (ctr===2 ){
+      return <Crew/>
+    }
+    else if (ctr===3 ){
+      return <Technology/>
+    }
   }
-  else if (ctr===1 || nxt==="destination" ){
-    return <Destination/>
-  }
-  else if (ctr===2 || nxt==="crew"){
-    return <Crew/>
-  }
-  else if (ctr===3 || nxt==="technology"){
-    return <Technology/>
-  }
+  
 
 }
 
