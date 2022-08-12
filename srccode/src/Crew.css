@@ -1,0 +1,131 @@
+:root{
+    --color-primary-:#0B0D17;
+    --color-secondary-:#D0D5F9;
+    --color-accent-:#FFFFFF;
+}
+@font-face {
+    font-family: 'barlow';
+    font-weight: 400;
+    src: local('barlow'), url('../fonts/barlow/BarlowCondensed-Regular.ttf') format('truetype');
+}
+  
+@font-face {
+    font-family: 'bellefair';
+    font-weight: 400;
+    src: local('bellefair'), url('../fonts/Bellefair/Bellefair-Regular.ttf') format('truetype');
+   
+}
+.head{
+    font-family:barlow;
+    font-size:3rem;
+    letter-spacing:0.5rem;
+}
+.rule{
+    width:100%;
+}
+.imgcrew{
+    width:100%;
+    height:35vh;
+}
+.crew,.crewdesc{
+    display:flex;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+}
+.text1{
+    text-align:center;
+}
+.slider0,.slider1,.slider2,.slider3{
+    width:1rem;
+    height:1.4rem;
+    background:rgba(156, 153, 153, 0.425);
+    margin:1rem;
+    border:none;
+    border-radius:100%;
+}
+.act{
+    background:var(--color-accent-);
+}
+.post{
+    font-family:barlow;
+    font-size:2.5rem;
+    letter-spacing:0.4rem;
+    color:var(--color-secondary-);
+}
+.name{
+    font-family:bellefair;
+    font-weight:400;
+    font-size:5rem;
+    color:var(--color-accent-);
+}
+.desc{
+    font-family:barlow;
+    font-size:2rem;
+    color:var(--color-secondary-);
+    width:100%;
+}
+@media screen and (min-width:768px) and (max-width:1080px) {
+    .crew{
+        flex-direction:column-reverse;
+        align-items:center;
+    }
+    .head{
+        text-align:left;
+        margin-left:3rem;
+    }
+    .crewdesc{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    .imgcrew{
+        width:100%;
+        
+        height:80vh;
+        margin-top:3rem;
+    }
+}
+@media screen and (min-width:1080px) and (max-width:1440px) {
+    .crew{
+        display:flex;
+        flex-direction:row-reverse;
+        gap:1rem;
+    }
+    .head{
+        margin-right:-5rem;
+    }
+    .imgcrew{
+        width:25rem;
+        height:25rem;
+        margin-top:-3rem;
+    }
+    .crewdesc{
+        display:flex;
+        flex-direction:column-reverse;
+        margin-left:-5rem;
+    }
+    .slider0,.slider1,.slider2,.slider3{
+        margin-left:-4rem;
+    }
+    .text1{
+        text-align:left;
+    }
+    .post{
+        font-family:barlow;
+        font-size:2rem;
+        letter-spacing:0.4rem;
+        color:var(--color-secondary-);
+    }
+    .name{
+        font-family:bellefair;
+        font-weight:400;
+        font-size:3rem;
+        color:var(--color-accent-);
+    }
+    .desc{
+        font-family:barlow;
+        font-size:1rem;
+        color:var(--color-secondary-);
+        width:50ch;
+    }
+}

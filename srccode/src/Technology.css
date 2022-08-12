@@ -1,0 +1,121 @@
+:root{
+    --color-primary-:#0B0D17;
+    --color-secondary-:#D0D5F9;
+    --color-accent-:#FFFFFF;
+  }
+  @font-face {
+    font-family: 'barlow';
+    font-weight: 400;
+    src: local('barlow'), url('../fonts/barlow/BarlowCondensed-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'bellefair';
+    font-weight: 400;
+    src: local('bellefair'), url('../fonts/Bellefair/Bellefair-Regular.ttf') format('truetype');
+  }
+  .techimgcont{
+    width:100%;
+    height:35vh;
+  }
+  .imgtech{
+    width:100%;
+    height:35vh;
+  }
+  .head {
+    color: white;
+    text-align:center;
+  }
+  .tech,.techdesc{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+  }
+  .slide0,.slide1,.slide2{
+    background:none;
+    color:var(--color-accent-);
+    border:1px solid white;
+    border-radius:100%;
+    padding:2.3rem;
+    margin:1rem 1rem;
+  }
+  .bright{
+    color:var(--color-primary-);
+    background:var(--color-accent-);
+  }
+  .abtmach{
+    text-align:center;
+    width:100%;
+  }
+  .term{
+    font-family:barlow;
+    color:var(--color-secondary-);
+    font-size:2.5rem;
+  }
+  .techname{
+    font-family:bellefair;
+    font-weight:400;
+    font-size:5rem;
+    color:var(--color-accent-);
+  }
+  .abttech{
+    font-family:barlow;
+    font-size:2rem;
+    color:var(--color-secondary-);
+    width:100%;
+  }
+  @media screen and (min-width:480px) and (max-width:1024px) {
+    .imgtech{
+      width:100%;
+      height:60vh;
+    }
+    .abttech{
+      width:40rem;
+      margin:auto;
+    }
+    .techdesc{
+      margin-top:13rem;
+    }
+  }
+  @media screen and (min-width:1024px) and (max-width:1400px) {
+    .techdesc{
+      display:flex;
+      flex-direction:row;
+      margin-top:15rem;
+      margin-right:-13rem
+    }
+  
+    .imgtech{
+      width:25rem;
+      height:30rem;
+      margin-left:27rem;
+    }
+    .tech{
+      display:flex;
+      flex-direction:row-reverse;
+      justify-content:space-between;
+      margin-top:-12rem;
+    }
+    .abtmach{
+      text-align:left;
+      margin-right:-10rem;
+    }
+    .term{
+      font-family:barlow;
+      color:var(--color-secondary-);
+      font-size:1rem;
+    }
+    .techname{
+      font-family:bellefair;
+      font-weight:400;
+      font-size:3rem;
+      color:var(--color-accent-);
+    }
+    .abttech{
+      font-family:barlow;
+      font-size:1.2rem;
+      color:var(--color-secondary-);
+      width:50ch;
+    }
+  }
